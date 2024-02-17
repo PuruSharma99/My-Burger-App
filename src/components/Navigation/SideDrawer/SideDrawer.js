@@ -1,30 +1,29 @@
-import React from 'react'
-import Logo from "../../Logo/Logo";
-import NavigationItems from "../NavigationItems/NavigationItems";
-import Backdrop from "../../UI/Backdrop/Backdrop";
+import React from 'react';
 
-import classes from "./SideDrawer.css";
-import Aux from '../../../hoc/Auxiliary/Auxiliary';
+import Logo from '../../Logo/Logo';
+import NavigationItems from '../NavigationItems/NavigationItems';
+import classes from './SideDrawer.css';
+import Backdrop from '../../UI/Backdrop/Backdrop';
+import Auxx from '../../../hoc/Auxx/Auxx';
 
-export default function SideDrawer({closed, open, isAuth}) {
-
-    let attachedClasses = [classes.SideDrawer, classes.Close]
-
-    if(open) {
-        attachedClasses = [classes.SideDrawer, classes.Open]
+const sideDrawer = ( props ) => {
+    let attachedClasses = [classes.SideDrawer, classes.Close];
+    if (props.open) {
+        attachedClasses = [classes.SideDrawer, classes.Open];
     }
-
     return (
-        <Aux>
-            <Backdrop show={open} clicked={closed} />
-            <div className={attachedClasses.join(" ")} onClick={closed}>
+        <Auxx>
+            <Backdrop show={props.open} clicked={props.closed}/>
+            <div className={attachedClasses.join(' ')}>
                 <div className={classes.Logo}>
                     <Logo />
                 </div>
                 <nav>
-                    <NavigationItems isAuth={isAuth} />
+                    <NavigationItems />
                 </nav>
             </div>
-        </Aux>
-    )
-}
+        </Auxx>
+    );
+};
+
+export default sideDrawer;
