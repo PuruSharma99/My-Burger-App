@@ -93,5 +93,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "engines": {
+    "node": "20.11.1"
   }
+  
 }
