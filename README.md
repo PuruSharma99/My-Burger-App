@@ -16,10 +16,9 @@ My Burger Builder
    How to setup locally:-
 4. Clone the repository in your system using:
 
-HTTP
-git clone https://github.com/PuruSharma99/My-Burger-App.git
-SSH
-git clone git@github.com:PuruSharma99/My-Burger-App.git
+-> HTTP: git clone https://github.com/PuruSharma99/My-Burger-App.git
+
+-> SSH: git clone git@github.com:PuruSharma99/My-Burger-App.git
 
 2. Change the node version to v6.17.1 and npm version to @3.10.10
 
