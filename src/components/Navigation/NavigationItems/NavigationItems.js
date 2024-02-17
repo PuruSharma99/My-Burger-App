@@ -1,13 +1,22 @@
-import React from 'react';
-
-import classes from './NavigationItems.css';
+import React from 'react'
 import NavigationItem from './NavigationItem/NavigationItem';
 
-const navigationItems = () => (
-    <ul className={classes.NavigationItems}>
-        <NavigationItem link="/" exact>Burger Builder</NavigationItem>
-        <NavigationItem link="/orders">Orders</NavigationItem>
-    </ul>
-);
+import classes from "./NavigationItems.css";
 
-export default navigationItems;
+export default function NavigationItems({isAuth}) {
+    return (
+        <ul className={classes.NavigationItems}>
+            <NavigationItem link="/">Burger Builder</NavigationItem>
+            {   
+                isAuth 
+                ? <NavigationItem link="/orders">Orders</NavigationItem>
+                : null
+            }
+            { 
+                isAuth 
+                ? <NavigationItem link="/logout">Logout</NavigationItem> 
+                : <NavigationItem link="/auth">Authenticate</NavigationItem>
+            }
+        </ul>
+    )
+}
