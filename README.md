@@ -7,7 +7,7 @@
 
 ## Live :-
 
-To check the working demo of the application visit here: https://build-my-burger.vercel.app/ .
+To check the working demo of the application visit here: https://my-burger-app.vercel.app/
 In case you don't want to create an account when you visit, here are the credentials for testing purpose only:
 ```
 Email: mzr55657@zwoho.com
@@ -18,12 +18,12 @@ Password: build-my-burger
 1.&nbsp; Clone the repository in your system using:
  - #### HTTP
 ```
-git clone https://github.com/harsh863/burger-builder.git
+git clone https://github.com/PuruSharma99/My-Burger-App.git
 ```
 
 - #### SSH
 ```
-git clone git@github.com:harsh863/burger-builder.git
+git clone git@github.com:PuruSharma99/My-Burger-App.git
 ```
 
 2.&nbsp; Navigate to root directory of the project and run `npm install` in your terminal to install all required packages.
