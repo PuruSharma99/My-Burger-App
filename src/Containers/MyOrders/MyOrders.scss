@@ -1,0 +1,71 @@
+.my-order-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+
+  &__filter-row {
+    width: calc(75vw + 40px);
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+
+    & .MuiFormControl-root {
+      min-width: 140px;
+      max-width: 180px !important;
+      font-size: .8rem !important;
+
+      & .MuiSelect-root{
+        font-size: .85rem !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+  }
+
+  &__no-orders-block,
+  &__null-filter-search-block{
+    display: flex;
+    transform: translateY(-20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 10px;
+
+    & h4{
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      transform: translateY(-20px);
+
+      & a,
+      .link{
+        text-decoration: none;
+        color: #551A8B;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.spinner-div {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin-top: 50px;
+  }
+}

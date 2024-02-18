@@ -1,27 +1,31 @@
-Table of Contents:
+<div align="center">
+    <img src="public/bb-logo/icon-192x192.png"/>
+</div>
+<h1 align="center">Burger Builder</h1>
 
-Project Description
-Live Project Link
-How to Install
+<p align="center"><b><i>An app to build your own burger, place that order and also view all your orders. ( Demonstrates the basic workflow of ReactJS )</i></b></p>
 
-My Burger Builder
+## Live :-
 
-1. Project Description
-   An app to build your own burger, place that order and also view all your orders. ( Demonstrates the basic workflow of ReactJS )
+To check the working demo of the application visit here: https://build-my-burger.vercel.app/ .
+In case you don't want to create an account when you visit, here are the credentials for testing purpose only:
+```
+Email: mzr55657@zwoho.com
+Password: build-my-burger
+```
 
-2. Live Project Link
-   https://my-burger-app.vercel.app/
+## How to setup locally:-
+1.&nbsp; Clone the repository in your system using:
+ - #### HTTP
+```
+git clone https://github.com/harsh863/burger-builder.git
+```
 
-3. How to Install the Project
-   How to setup locally:-
-4. Clone the repository in your system using:
+- #### SSH
+```
+git clone git@github.com:harsh863/burger-builder.git
+```
 
--> HTTP: git clone https://github.com/PuruSharma99/My-Burger-App.git
+2.&nbsp; Navigate to root directory of the project and run `npm install` in your terminal to install all required packages.
 
--> SSH: git clone git@github.com:PuruSharma99/My-Burger-App.git
-
-2. Change the node version to v6.17.1 and npm version to @3.10.10
-
-3. Navigate to root directory of the project and run npm install in your terminal to install all required packages.
-
-4. To start the project run npm start in your terminal.
+3.&nbsp; To start the project run `npm start` in your terminal.
